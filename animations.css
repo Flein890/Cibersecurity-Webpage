@@ -11,3 +11,25 @@
 [transition-style="in:circle:center"] {
   animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) circle-in-center both;
 }
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*__________________TYPEWRITER____________*/
+@keyframes blink {
+  to {
+    background: transparent;
+    opacity: 0;
+  }
+}
+@keyframes typing {
+  to {
+    left: 100%;
+  }
+}

@@ -160,9 +160,7 @@ li {
   -ms-transform: translate(0);
   -o-transform: translate(0);
 }
-/*----efecto nav-----*/
 
-/*------------------*/
 @media (max-width: 768px) {
   .nav-elements {
     gap: 25px;
@@ -275,21 +273,8 @@ li {
   }
 }
 
-@keyframes circle-in-center {
-  from {
-    clip-path: circle(0%);
-    color: #fff;
-  }
-  to {
-    clip-path: circle(125%);
-  }
-}
+/*-------------------------------------------------MAIN---------------------------------------*/
 
-[transition-style="in:circle:center"] {
-  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) circle-in-center both;
-}
-
-/*-------------------------------------------------MAIN-------------------------------*/
 body {
   background-color: #ddd;
   display: flex;
@@ -337,13 +322,54 @@ main {
   color: var(--text-gray);
 }
 
-.hero-izquierda h1 {
+.hero_h1 {
   font-size: 3em;
+  animation: fade 0.5s backwards;
+  -webkit-animation: fade 0.5s backwards;
 }
+
+/*typewriter animation*/
+.hero_h1 span {
+  position: relative;
+  background: #000;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.hero_h1 span::before,
+.hero_h1 span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: #020300; */
+}
+.hero_h1 span:before {
+  background-color: #fff;
+  animation: typing 1.2s 1.4s steps(14) forwards;
+  -webkit-animation: typing 1.2s 1.4s steps(14) forwards;
+}
+.hero_h1 span:after {
+  width: 0.08em;
+  background-color: #000;
+  animation: typing 1.2s 1.4s steps(14) forwards, blink 0.6s steps(6) infinite;
+  -webkit-animation: typing 1.2s 1.4s steps(14) forwards,
+    blink 0.6s steps(6) infinite;
+}
+
+/*________________________*/
+
 /*right*/
 .hero-derecha {
   width: 80%;
   padding-right: 60px;
+  background-image: url(./imagenes/prueba.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero-derecha img {
   width: 100%;
@@ -362,81 +388,4 @@ main {
   color: #fff;
 }
 
-/*____________________________CARD SECTION______________________*/
-
-.card {
-  margin-left: -1rem;
-  margin-right: -1rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  margin-bottom: 2rem;
-  width: 320px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 0.25rem;
-  background-color: rgba(17, 24, 39, 1);
-  padding: 1.5rem;
-}
-
-.header {
-  display: flex;
-  flex-direction: column;
-}
-
-.title {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 700;
-  color: #fff;
-}
-
-.price {
-  font-size: 3.75rem;
-  line-height: 1;
-  font-weight: 700;
-  color: #fff;
-}
-
-.desc {
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
-  line-height: 1.625;
-  color: rgba(156, 163, 175, 1);
-}
-
-.lists {
-  margin-bottom: 1.5rem;
-  flex: 1 1 0%;
-  color: rgba(156, 163, 175, 1);
-}
-
-.lists .list {
-  margin-bottom: 0.5rem;
-  display: flex;
-  margin-left: 0.5rem;
-}
-
-.lists .list svg {
-  height: 1.5rem;
-  width: 1.5rem;
-  flex-shrink: 0;
-  margin-right: 0.5rem;
-  color: rgba(167, 139, 250, 1);
-}
-
-.action {
-  border: none;
-  outline: none;
-  display: inline-block;
-  border-radius: 0.25rem;
-  background-color: rgba(167, 139, 250, 1);
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  text-align: center;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  color: rgba(17, 24, 39, 1);
-}
+/*________________________________CARD SECTION____________________________*/
