@@ -388,4 +388,36 @@ main {
   color: #fff;
 }
 
-/*________________________________CARD SECTION____________________________*/
+/*________________________________BENEFITS SECTION____________________________*/
+
+#benefits-section {
+  background-color: #020300;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.benefits-title {
+  padding-top: 40px;
+  font-size: 2em;
+}
+.benefits-title span {
+  color: #63b4f2;
+}
+
+.info-container {
+  display: flex;
+  /* padding: 40px 60px; */
+}
+.info-container_izquierda,
+.info-container_derecha {
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 25px;
+}
+
+.info-text i {
+  padding-right: 5px;
+}
