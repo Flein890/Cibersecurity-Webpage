@@ -388,6 +388,19 @@ main {
   cursor: pointer;
   font-weight: 600;
   color: #fff;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.hero-btn:hover {
+  box-shadow: 1px 5px 5px 1px #b8cc39;
+  transform: translateY(-10%);
+  -webkit-transform: translateY(-10%);
+  -moz-transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
+  -o-transform: translateY(-10%);
 }
 
 /*________________________________BENEFITS SECTION____________________________*/
@@ -440,9 +453,10 @@ main {
     rgba(184, 204, 57, 1) 97%
   ); */
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   padding: 60px;
+  gap: 125px;
 }
 
 .about-title_container h3 {
