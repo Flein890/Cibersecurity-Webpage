@@ -161,12 +161,6 @@ li {
   -o-transform: translate(0);
 }
 
-@media (max-width: 768px) {
-  .nav-elements {
-    gap: 25px;
-  }
-}
-
 @media (max-width: 576px) {
   nav ul {
     /* background: rgb(126, 176, 127);
@@ -288,17 +282,25 @@ main {
   max-width: 1600px;
 }
 #hero {
-  padding-top: 60px;
+  padding: 60px 0 25px 60px;
   display: flex;
   /* max-width: 1200px; */
   align-items: center;
+}
+@media (max-width: 1500px) {
+  .nav-elements {
+    gap: 25px;
+  }
+  #hero {
+    padding-top: 120px;
+  }
 }
 
 /*left*/
 .hero-izquierda {
   display: flex;
   flex-direction: column;
-  padding-left: 60px;
+
   gap: 25px;
 }
 
@@ -402,7 +404,11 @@ main {
   font-size: 2em;
 }
 .benefits-title span {
-  color: #63b4f2;
+  /* color: #63b4f2; */
+  background: var(--btn-bg);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .info-container {
@@ -411,13 +417,83 @@ main {
 }
 .info-container_izquierda,
 .info-container_derecha {
-  padding: 40px 60px;
+  padding: 60px;
   display: flex;
   flex-direction: column;
   width: 50%;
-  gap: 25px;
+  gap: 40px;
+  color: #ccc;
 }
 
 .info-text i {
   padding-right: 5px;
+}
+
+/*_______________________________PLANS SECTION________________________*/
+
+#about-section {
+  background-color: #fff;
+  /* background: rgb(126, 176, 127);
+  background: linear-gradient(
+    90deg,
+    rgba(126, 176, 127, 1) 0%,
+    rgba(184, 204, 57, 1) 97%
+  ); */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px;
+}
+
+.about-title_container h3 {
+  font-size: 3em;
+  background: linear-gradient(to right, #000, #666);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-decoration: underline;
+}
+
+.about-info_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-info_container span {
+  font-size: 1.1em;
+  color: #444;
+}
+
+.about-img_container {
+  width: 550px;
+  height: 350px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 1px 10px 25px rgba(0, 0, 0, 0.5);
+  padding: 0;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+}
+.about-img_container img {
+  width: 700px;
+  height: 100%;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+}
+
+.about-img_container img:hover {
+  transform: translateX(-15%);
+  -webkit-transform: translateX(-15%);
+  -moz-transform: translateX(-15%);
+  -ms-transform: translateX(-15%);
+  -o-transform: translateX(-15%);
+  filter: brightness(80%);
+  -webkit-filter: brightness(80%);
 }
