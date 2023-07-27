@@ -85,7 +85,6 @@ li {
 .label-bar {
   display: none;
   flex-direction: column;
-
   background-color: #000;
   cursor: pointer;
   position: relative;
@@ -245,8 +244,9 @@ li {
   }
 
   .label-bar {
-    display: block;
+    display: flex;
     color: #fff;
+    gap: 5px;
   }
 
   #toggle-menu:checked ~ .nav-elements {
