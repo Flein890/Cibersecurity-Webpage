@@ -457,7 +457,7 @@ main {
 /*_______________________________ABOUT THE COURSE SECTION________________________*/
 
 #about-section {
-  background-color: #fff;
+  background: #fff;
   /* background: rgb(126, 176, 127);
   background: linear-gradient(
     90deg,
@@ -469,6 +469,9 @@ main {
   align-items: center;
   padding: 120px 60px;
   gap: 125px;
+  border-top: 1px solid #b8cc39;
+  border-bottom: 1px solid #b8cc39;
+  box-shadow: -15px -15px -15px -15px #b8cc39;
 }
 
 .about-title_container h3 {
@@ -488,7 +491,7 @@ main {
 
 .about-info_container span {
   font-size: 1.1em;
-  color: #444;
+  color: #000;
 }
 
 .about-img_container {
@@ -532,7 +535,7 @@ main {
   flex-direction: column;
   color: #fff;
   align-items: center;
-  padding: 30px;
+  padding-bottom: 50px;
 }
 .pricing-title {
   font-size: 2.3em;
@@ -578,6 +581,8 @@ main {
   -o-border-radius: 15px;
   padding: 20px;
   gap: 15px;
+  width: 380px;
+  height: 516px;
 }
 
 .card1-heading {
@@ -692,4 +697,67 @@ main {
 
 .card2-heading_span {
   border: 1px solid var(--bt-bg);
+}
+
+/*_________________________________FOOTER__________________________*/
+
+#footer {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 120px;
+  gap: 40px;
+}
+
+.us {
+  text-align: center;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.us h3 {
+  font-size: 2.4em;
+}
+.contact {
+  width: 33%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact h3 {
+  font-size: 2.4em;
+}
+
+.contact i {
+  font-size: 1.7em;
+  padding-top: 20px;
+}
+
+.divider-h3 {
+  height: 2px;
+  width: 40px;
+  background-color: #000;
+  box-shadow: 1px 1px 10px 1px #ccc;
+  margin: 0 auto;
+}
+
+.reflinks-footer {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+#footer-bottom {
+  background: #020300;
+  color: #fff;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 20px;
 }
