@@ -657,7 +657,7 @@ main {
     padding-top: 120px;
   }
 }
-/*___________________________*/
+/*___________________________________________________________________________________________*/
 
 @media (max-width: 992px) {
   .hero-derecha {
@@ -872,7 +872,7 @@ main {
   }
   .hero_h1 span:after {
     height: 40px;
-    top: 60px;
+    top: 55px;
   }
 
   .info-container_izquierda,
@@ -884,5 +884,12 @@ main {
 
   #footer {
     padding: 60px;
+  }
+
+  .card1 {
+    width: 300px;
+  }
+  header {
+    width: 100vw;
   }
 }
