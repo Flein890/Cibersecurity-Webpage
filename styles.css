@@ -724,16 +724,17 @@ main {
       rgba(126, 176, 127, 1) 0%,
       rgba(184, 204, 57, 1) 100%
     ); */
-    background-color: #fff;
+    background-color: transparent;
     width: 100%;
-    height: 46vh;
+    height: 100vh;
     position: absolute;
     top: 69px;
     left: 0;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 40px;
+  }
+  .registro {
+    background: transparent;
   }
   /*modificacion barra*/
   .label-bar span {
@@ -743,14 +744,14 @@ main {
   /*--------------------*/
 
   .nav-elements {
-    transform: translate(200%);
+    transform: translateY(200%);
     justify-content: start;
-    align-items: center;
+    align-items: start;
     padding-top: 20px;
-    -webkit-transform: translate(200%);
-    -moz-transform: translate(200%);
-    -ms-transform: translate(200%);
-    -o-transform: translate(200%);
+    -webkit-transform: translateY(200%);
+    -moz-transform: translateY(200%);
+    -ms-transform: translateY(200%);
+    -o-transform: translateY(200%);
     transition: transform 0.4s;
     -webkit-transition: transform 0.4s;
     -moz-transition: transform 0.4s;
@@ -761,15 +762,21 @@ main {
     -moz-border-radius: 0 0 15px 15px;
     -ms-border-radius: 0 0 15px 15px;
     -o-border-radius: 0 0 15px 15px;
-    border: 6px solid #000;
-    border-top: 0;
   }
 
   .nav-elements_li {
     /* border-bottom: 2px solid #000; */
     display: flex;
     padding: 20px 50px 15px 40px;
+    margin-left: 35px;
+    position: relative;
+    font-size: 1.6em;
+    border-bottom: 1px solid #000;
+    width: 80%;
+    box-shadow: 6px 4px 0 0 #b8cc39;
+    background-color: #fff;
   }
+
   .iniciodesesion {
     outline: none;
     border-radius: 0;
@@ -777,8 +784,16 @@ main {
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
+    bottom: 100px;
+    left: 0;
+    position: absolute;
   }
-
+  .iniciodesesion::after {
+    content: "➥";
+    display: flex;
+    align-self: center;
+    padding-left: 30px;
+  }
   .registro {
     outline: none;
     border-radius: 0;
