@@ -1,0 +1,132 @@
+/* #main-register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+#register {
+  padding: 100px 10px 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+.register-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 400px;
+}
+/*____________________*/
+.register-title_container h1 {
+  font-size: 2em;
+  text-align: center;
+}
+.register-title_container p {
+  color: #888;
+  text-align: center;
+}
+/*____________________*/
+.register-img_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.register-img_container a {
+  border: 1px solid #ccc;
+  border-radius: 1.2em;
+  -webkit-border-radius: 1.2em;
+  -moz-border-radius: 1.2em;
+  -ms-border-radius: 1.2em;
+  -o-border-radius: 1.2em;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.login-img {
+  width: 20px;
+}
+/*____________________*/
+.register-divider {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+.r-div {
+  height: 2px;
+  width: 40%;
+  background-color: #bbb;
+}
+/*____________________*/
+
+.register-email {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  padding-left: 20px;
+  gap: 3px;
+}
+
+#email-address {
+  padding: 10px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.register-password {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  padding-left: 20px;
+  gap: 3px;
+}
+
+#password {
+  padding: 10px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+/*____________________*/
+
+.rememberME {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-left: 20px;
+}
+.rememberME label {
+  font-size: 0.9em;
+  color: #777;
+}
+/*____________________*/
+
+.register-button_container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.register-button {
+  width: 100%;
+  background-color: #b8cc39;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.alreadyaccount {
+  font-size: 0.9em;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}

@@ -828,10 +828,10 @@ main {
     -o-transform: translate(0);
   }
 
-  .nav-elements_li:active {
+  /* .nav-elements_li:active {
     animation: circle-in-center 0.5s;
     -webkit-animation: circle-in-center 0.5s;
-  }
+  } */
 
   .hero-derecha {
     display: none;
