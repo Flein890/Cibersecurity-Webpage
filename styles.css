@@ -10,7 +10,9 @@
   );
   --text-semigray: #bbb;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -218,6 +220,9 @@ main {
   font-size: 3em;
   animation: fade 0.5s backwards;
   -webkit-animation: fade 0.5s backwards;
+}
+.hero-btn {
+  text-align: center;
 }
 
 .hero-btn-p_container {
