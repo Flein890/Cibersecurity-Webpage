@@ -148,9 +148,8 @@
     height: 100vh;
   }
   .register-container {
-    gap: 40px;
+    gap: 25px;
     background-color: #fff;
-    height: 100vh;
     height: calc(100vh - 120px);
   }
 }
