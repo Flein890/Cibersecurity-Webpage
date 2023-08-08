@@ -163,17 +163,23 @@ li {
   -ms-transform: translate(0);
   -o-transform: translate(0);
 }
-
+.nav-elements_li {
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
 .nav-elements_li a:hover {
   color: #999;
-  transition: color 0.4s;
-  -webkit-transition: color 0.4s;
-  -moz-transition: color 0.4s;
-  -ms-transition: color 0.4s;
-  -o-transition: color 0.4s;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
 }
 .registro:hover {
-  background-color: #b8cc39;
+  background-color: #ddd;
   transition: all 0.4s;
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
