@@ -914,3 +914,10 @@ main {
     width: 100vw;
   }
 }
+
+@media (min-width: 540px) and (max-width: 616px) {
+  .hero_h1 span:after {
+    height: 40px;
+    top: 0;
+  }
+}
