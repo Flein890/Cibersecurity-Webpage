@@ -221,8 +221,8 @@ main {
   background-color: #fff;
   max-width: 1600px;
   /*nuevo*/
-  animation: circle-in-hesitate 2s ease-out;
-  -webkit-animation: circle-in-hesitate 1.7s ease-out;
+  animation: circle-in-hesitate 1.3s ease-out;
+  -webkit-animation: circle-in-hesitate 1.5s ease-out;
 }
 
 @keyframes circle-in-hesitate {
