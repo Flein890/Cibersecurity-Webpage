@@ -220,9 +220,10 @@ main {
   flex-direction: column;
   background-color: #fff;
   max-width: 1600px;
-  /*nuevo*/
-  animation: circle-in-hesitate 1.3s ease-out;
-  -webkit-animation: circle-in-hesitate 1.5s ease-out;
+}
+.main {
+  animation: circle-in-hesitate 1.2s ease-out;
+  -webkit-animation: circle-in-hesitate 1.2s ease-out;
 }
 
 @keyframes circle-in-hesitate {
