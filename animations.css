@@ -34,3 +34,9 @@
     left: 100%;
   }
 }
+
+@keyframes noTyping {
+  to {
+    left: 0;
+  }
+}

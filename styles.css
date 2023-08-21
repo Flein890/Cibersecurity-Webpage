@@ -781,6 +781,19 @@ main {
   .hero-btn {
     width: 150px;
   }
+  .hero-izquierda {
+    align-items: center;
+  }
+  .hero_h1 {
+    text-align: center;
+  }
+  .hero-btn-p_container p {
+    text-align: center;
+    width: 100%;
+  }
+  .hero-btn {
+    margin: 0 auto;
+  }
 }
 /*___________________________*/
 
@@ -955,7 +968,7 @@ main {
   }
   .hero_h1 span:after {
     height: 40px;
-    top: 55px;
+    top: 50px;
   }
 
   .info-container_izquierda,
@@ -981,17 +994,28 @@ main {
   .nav-elements_li:hover {
     background-color: #b8cc39;
   }
+  .hero_h1 span::after {
+    animation: blink 1s steps(7) infinite;
+    -webkit-animation: blink 1s steps(7) infinite;
+    left: 60px;
+  }
+  .hero_h1 span::before {
+    animation: typing 0.1s steps(1) forwards;
+    -webkit-animation: typing 0.1s steps(1) forwards;
+  }
 }
 
 @media (min-width: 579px) and (max-width: 616px) {
   .hero_h1 span:after {
     height: 40px;
     top: 65px;
+    /* left: -10px; */
   }
 }
-@media (min-width: 552px) and (max-width: 578px) {
-  .hero_h1 span:after {
-    height: 40px;
+
+@media (min-width: 548px) and (max-width: 576px) {
+  .hero_h1 span::after {
     top: 0;
+    left: 263px;
   }
 }
