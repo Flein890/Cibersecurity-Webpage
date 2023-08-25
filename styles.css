@@ -1029,4 +1029,21 @@ main {
   .hero_h1 {
     font-size: 1.7em;
   }
+
+  .contact h3 {
+    font-size: 1.9em;
+  }
+  .hero_h1 {
+    font-size: 1.5em;
+  }
+  .pricing-plans-container {
+    width: 320px;
+  }
+  .hero_h1 span::after {
+    display: none;
+  }
+  .map iframe {
+    height: 200px;
+    width: 200px;
+  }
 }
