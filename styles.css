@@ -727,7 +727,7 @@ main {
 }
 /*___________________________________________________________________________________________*/
 
-@media (max-width: 992px) {
+@media (max-width: 1276px) {
   .hero-derecha {
     display: none;
   }
@@ -798,7 +798,7 @@ main {
 }
 /*___________________________*/
 
-@media (max-width: 576px) {
+@media (max-width: 657px) {
   nav ul {
     /* background: rgb(126, 176, 127);
     background: linear-gradient(
