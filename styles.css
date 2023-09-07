@@ -330,15 +330,14 @@ main {
 
 /*right*/
 .hero-derecha {
-  width: 80%;
+  width: 75%;
   padding-right: 60px;
-  background-image: url(./imagenes/prueba.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .hero-derecha img {
-  width: 100%;
+  width: 90%;
 }
 
 /*btn*/
@@ -968,8 +967,7 @@ main {
     width: 100%;
   }
   .hero_h1 span:after {
-    height: 40px;
-    top: 50px;
+    display: none;
   }
 
   .info-container_izquierda,
@@ -1029,9 +1027,12 @@ main {
   .hero_h1 {
     font-size: 1.7em;
   }
+  .contact-info_span {
+    font-size: 0.9em;
+  }
 
   .contact h3 {
-    font-size: 1.9em;
+    font-size: 1.8em;
   }
   .hero_h1 {
     font-size: 1.5em;
