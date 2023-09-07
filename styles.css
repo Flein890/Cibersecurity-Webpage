@@ -714,6 +714,10 @@ main {
   gap: 20px;
 }
 
+.reflinks-footer a:hover {
+  scale: 1.1;
+}
+
 /*-------DISEÑO RESPONSIVE------*/
 
 @media (max-width: 1500px) {
